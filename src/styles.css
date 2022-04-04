@@ -1,0 +1,42 @@
+body {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(100px, auto) repeat(5, 50px);
+  width: 300px;
+  margin: 50px auto;
+}
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  align-items: center;
+  justify-items: end;
+}
+.spanTwo {
+  grid-column: span 2;
+}
+.button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid silver;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255);
+}
+.first_value,
+.second_value {
+  color: #fff;
+  margin-right: 10px;
+}
+.first_value {
+  font-size: 13px;
+}
+.second_value {
+  font-size: 25px;
+}
